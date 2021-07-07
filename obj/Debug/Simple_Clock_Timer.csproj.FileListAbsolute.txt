@@ -1,0 +1,9 @@
+D:\GitHub\Simple_Clock&Timer_C#\bin\Debug\Alarm.exe.config
+D:\GitHub\Simple_Clock&Timer_C#\bin\Debug\Alarm.exe
+D:\GitHub\Simple_Clock&Timer_C#\bin\Debug\Alarm.pdb
+D:\GitHub\Simple_Clock&Timer_C#\obj\Debug\Alarm.Form1.resources
+D:\GitHub\Simple_Clock&Timer_C#\obj\Debug\Alarm.Properties.Resources.resources
+D:\GitHub\Simple_Clock&Timer_C#\obj\Debug\Simple_Clock_Timer.csproj.GenerateResource.cache
+D:\GitHub\Simple_Clock&Timer_C#\obj\Debug\Simple_Clock_Timer.csproj.CoreCompileInputs.cache
+D:\GitHub\Simple_Clock&Timer_C#\obj\Debug\Alarm.exe
+D:\GitHub\Simple_Clock&Timer_C#\obj\Debug\Alarm.pdb
