@@ -7,3 +7,13 @@ D:\GitHub\Simple_Clock&Timer_C#\obj\Debug\Simple_Clock_Timer.csproj.GenerateReso
 D:\GitHub\Simple_Clock&Timer_C#\obj\Debug\Simple_Clock_Timer.csproj.CoreCompileInputs.cache
 D:\GitHub\Simple_Clock&Timer_C#\obj\Debug\Alarm.exe
 D:\GitHub\Simple_Clock&Timer_C#\obj\Debug\Alarm.pdb
+D:\GitHub\Simple_Clock&Timer_Csharp\obj\Debug\Simple_Clock_Timer.csproj.AssemblyReference.cache
+D:\GitHub\Simple_Clock&Timer_Csharp\obj\Debug\Simple_Clock_Timer.csproj.GenerateResource.cache
+D:\GitHub\Simple_Clock&Timer_Csharp\obj\Debug\Simple_Clock_Timer.csproj.CoreCompileInputs.cache
+D:\GitHub\Simple_Clock&Timer_Csharp\obj\Debug\Simple_Clock_Timer.Form1.resources
+D:\GitHub\Simple_Clock&Timer_Csharp\bin\Debug\Simple_Clock_Timer.exe.config
+D:\GitHub\Simple_Clock&Timer_Csharp\bin\Debug\Simple_Clock_Timer.exe
+D:\GitHub\Simple_Clock&Timer_Csharp\bin\Debug\Simple_Clock_Timer.pdb
+D:\GitHub\Simple_Clock&Timer_Csharp\obj\Debug\Simple_Clock_Timer.Properties.Resources.resources
+D:\GitHub\Simple_Clock&Timer_Csharp\obj\Debug\Simple_Clock_Timer.exe
+D:\GitHub\Simple_Clock&Timer_Csharp\obj\Debug\Simple_Clock_Timer.pdb

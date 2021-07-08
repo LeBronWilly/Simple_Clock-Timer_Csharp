@@ -1,4 +1,4 @@
-﻿namespace Alarm
+﻿namespace Simple_Clock_Timer
 {
     partial class Form1
     {
@@ -36,17 +36,18 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.ttxtS = new System.Windows.Forms.ToolStripTextBox();
+            this.tbtnStart = new System.Windows.Forms.ToolStripButton();
+            this.tbtnPause = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.slblSet = new System.Windows.Forms.ToolStripStatusLabel();
             this.spgbSec = new System.Windows.Forms.ToolStripProgressBar();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblTime = new System.Windows.Forms.Label();
             this.tmrTime = new System.Windows.Forms.Timer(this.components);
             this.tmrAlarm = new System.Windows.Forms.Timer(this.components);
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
-            this.tbtnStart = new System.Windows.Forms.ToolStripButton();
-            this.tbtnPause = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -68,7 +69,7 @@
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(853, 31);
+            this.toolStrip1.Size = new System.Drawing.Size(862, 31);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
@@ -112,30 +113,83 @@
             this.ttxtS.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
             this.ttxtS.Name = "ttxtS";
             this.ttxtS.Size = new System.Drawing.Size(60, 31);
+            this.ttxtS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ttxtS_KeyPress);
+            this.ttxtS.Click += new System.EventHandler(this.ttxtS_Click);
+            this.ttxtS.TextChanged += new System.EventHandler(this.ttxtS_TextChanged);
+            // 
+            // tbtnStart
+            // 
+            this.tbtnStart.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tbtnStart.Image = global::Simple_Clock_Timer.Properties.Resources.play;
+            this.tbtnStart.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tbtnStart.Name = "tbtnStart";
+            this.tbtnStart.Size = new System.Drawing.Size(29, 28);
+            this.tbtnStart.Text = "toolStripButton1";
+            this.tbtnStart.Click += new System.EventHandler(this.tbtnStart_Click);
+            // 
+            // tbtnPause
+            // 
+            this.tbtnPause.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tbtnPause.Image = global::Simple_Clock_Timer.Properties.Resources.pause;
+            this.tbtnPause.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tbtnPause.Name = "tbtnPause";
+            this.tbtnPause.Size = new System.Drawing.Size(29, 28);
+            this.tbtnPause.Text = "toolStripButton2";
+            this.tbtnPause.Click += new System.EventHandler(this.tbtnPause_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 31);
+            // 
+            // toolStripLabel2
+            // 
+            this.toolStripLabel2.Name = "toolStripLabel2";
+            this.toolStripLabel2.Size = new System.Drawing.Size(175, 28);
+            this.toolStripLabel2.Text = "Created by Willy Fang";
+            this.toolStripLabel2.Click += new System.EventHandler(this.toolStripLabel2_Click);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = global::Simple_Clock_Timer.Properties.Resources._126843675_134489861754340_7146523900997636052_n;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(29, 28);
+            this.toolStripButton1.Text = "toolStripButton1";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.slblSet,
-            this.spgbSec});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 382);
+            this.spgbSec,
+            this.toolStripStatusLabel1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 400);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(853, 29);
+            this.statusStrip1.Size = new System.Drawing.Size(862, 29);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // slblSet
             // 
             this.slblSet.Name = "slblSet";
-            this.slblSet.Size = new System.Drawing.Size(169, 23);
-            this.slblSet.Text = "toolStripStatusLabel1";
+            this.slblSet.Size = new System.Drawing.Size(94, 23);
+            this.slblSet.Text = "時鐘or倒數";
             // 
             // spgbSec
             // 
             this.spgbSec.Name = "spgbSec";
             this.spgbSec.Size = new System.Drawing.Size(200, 21);
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(44, 23);
+            this.toolStripStatusLabel1.Text = "秒數";
+            this.toolStripStatusLabel1.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
             // 
             // lblTime
             // 
@@ -144,7 +198,7 @@
             this.lblTime.Location = new System.Drawing.Point(13, 138);
             this.lblTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(827, 128);
+            this.lblTime.Size = new System.Drawing.Size(836, 128);
             this.lblTime.TabIndex = 2;
             this.lblTime.Text = "label1";
             this.lblTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -159,56 +213,15 @@
             this.tmrAlarm.Interval = 500;
             this.tmrAlarm.Tick += new System.EventHandler(this.tmrAlarm_Tick);
             // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 31);
-            // 
-            // toolStripLabel2
-            // 
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(175, 28);
-            this.toolStripLabel2.Text = "Created by Willy Fang";
-            this.toolStripLabel2.Click += new System.EventHandler(this.toolStripLabel2_Click);
-            // 
-            // tbtnStart
-            // 
-            this.tbtnStart.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tbtnStart.Image = global::Alarm.Properties.Resources.play;
-            this.tbtnStart.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tbtnStart.Name = "tbtnStart";
-            this.tbtnStart.Size = new System.Drawing.Size(29, 28);
-            this.tbtnStart.Text = "toolStripButton1";
-            this.tbtnStart.Click += new System.EventHandler(this.tbtnStart_Click);
-            // 
-            // tbtnPause
-            // 
-            this.tbtnPause.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tbtnPause.Image = global::Alarm.Properties.Resources.pause;
-            this.tbtnPause.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tbtnPause.Name = "tbtnPause";
-            this.tbtnPause.Size = new System.Drawing.Size(29, 28);
-            this.tbtnPause.Text = "toolStripButton2";
-            this.tbtnPause.Click += new System.EventHandler(this.tbtnPause_Click);
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::Alarm.Properties.Resources._126843675_134489861754340_7146523900997636052_n;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(29, 28);
-            this.toolStripButton1.Text = "toolStripButton1";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(853, 411);
+            this.ClientSize = new System.Drawing.Size(862, 429);
             this.Controls.Add(this.lblTime);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStrip1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Clock & Timer";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -241,6 +254,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }
 
